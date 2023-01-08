@@ -34,8 +34,9 @@ PageRank(V_i) = \frac{d}{n} + (1-d) \times \sum_{l_{j,i}\in E} \frac {PageRank(P
 $$
 
 $$
-d:\, damping \,factor\newline
-n:\, number\, of\, vertex
+\displaylines{
+d:\ damping \ factor\\
+n:\ number\  of\ vertex}
 $$
 
 ### SimRank
