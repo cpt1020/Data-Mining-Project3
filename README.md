@@ -47,9 +47,9 @@ S(a,b)= \frac{C}{\mid{I(a)}\mid\mid{I(b)}\mid}\sum_{i=1}^{\mid{I(a)}\mid} \sum_{
 $$
 
 $$ 
-S(a,b): similarity\, of\, node\, a\, and\, node\, b\newline
-C: decay\, factor\newline
-{I(a)}: parent\, of\, node\, a
+S(a,b): similarity\ of\ node\ a\ and\ node\ b\\
+C: decay\ factor\\
+{I(a)}: parent\ of\ node\ a
 $$
 
 ## Getting Started
