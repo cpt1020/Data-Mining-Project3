@@ -20,9 +20,9 @@ The following parameters can be set in `main.py`:
 Formula implemented in this project:
 
 $$
-Authority(v)=\sum_{w\,\in\, parent(v)} Hub(w)\newline
-\newline
-Hub(v)=\sum_{w\,\in\, children(v)} Authority(w)
+\displaylines{
+Authority(v)=\sum_{w\ \in\  parent(v)} Hub(w)\\\\
+Hub(v)=\sum_{w\ \in\  children(v)} Authority(w)}
 $$
 
 ### PageRank
@@ -44,11 +44,11 @@ $$
 Formula implemented in this project:
 
 $$
-S(a,b)= \frac{C}{\mid{I(a)}\mid\mid{I(b)}\mid}\sum_{i=1}^{\mid{I(a)}\mid} \sum_{j=1}^{\mid{I(b)}\mid} S(I_i(a), I_j(b))
+S(a,\ b)= \frac{C}{\mid{I(a)}\mid\mid{I(b)}\mid}\sum_{i=1}^{\mid{I(a)}\mid} \sum_{j=1}^{\mid{I(b)}\mid} S(I_i(a),\ I_j(b))
 $$
 
 $$ 
-\displaylines{ S(a,b): similarity\ of\ node\ a\ and\ node\ b \\
+\displaylines{ S(a,\ b): similarity\ of\ node\ a\ and\ node\ b \\
 C: decay\ factor \\
 {I(a)}: parent\ of\ node\ a }
 $$
