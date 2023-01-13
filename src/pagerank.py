@@ -32,7 +32,7 @@ def pagerank(file_name, adj_matrix, vertex_size, damping_factor, max_iteration, 
 
     iteration = 1
     while True:
-        
+
         prev_page_rank = page_rank.copy()
 
         for i in range(vertex_size):
@@ -47,13 +47,13 @@ def pagerank(file_name, adj_matrix, vertex_size, damping_factor, max_iteration, 
 
         page_rank = one_norm(page_rank, vertex_size)
 
-        # 依照threshold或Max iteration決定是否break
+        # break while loop depending on convergence threshold or max iteration
         if iteration >= max_iteration or np.allclose(prev_page_rank, page_rank, atol = epsilon):
             break
         else:
             iteration += 1
 
-        # 僅依照max iterattion決定是否break
+        # break while loop depending on convergence max iteration
         # if iteration >= max_iteration:
         #     break
         # else:

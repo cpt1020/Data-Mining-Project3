@@ -7,13 +7,13 @@ def main():
 
     '''Parameters Setting'''
     epsilon = 1e-10         # threshold for convergence
-    max_iteration = 100
+    max_iteration = 30
     damping_factor = 0.1
     decay_factor = 0.7
 
     '''Read Graph & Record Its Nodes and Edges'''
     # file_name = 'input/ibm-5000.txt'
-    file_name = 'input/graph_5.txt'
+    file_name = 'input/graph_1.txt'
     print(f"--------------------File: {file_name}--------------------")
     from_node, to_node, vertex_size = read_file(file_name)
     
