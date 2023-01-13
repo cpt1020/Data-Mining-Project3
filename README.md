@@ -1,6 +1,6 @@
 # Data Mining Project 3
 
-This is a homework of Data Mining course (Fall 2022) at NCKU.
+This is a homework of Data Mining course Fall 2022 @ NCKU.
 
 ## Algorithms Implemented
 
