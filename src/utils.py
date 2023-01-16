@@ -1,4 +1,5 @@
 import numpy as np
+import os
 
 def is_in_list(list, num):
     for elem in list:
@@ -65,8 +66,9 @@ def construct_adj_matrix(from_node, to_node, vertex_size):
 #     f = open(file_name, "w")
 #     f.write(output)
 #     f.close()
-def write_file(file_name, output):
-    np.savetxt(file_name, output, fmt='%.3f', newline=' ')
+def write_file(path, file_name, output):
+    os.makedirs(path, exist_ok=True)
+    np.savetxt(file_name, output, fmt='%.6f', newline=' ')
 
 # 1-norm normalization
 def one_norm(list, vertex_size):

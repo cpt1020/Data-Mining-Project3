@@ -1,6 +1,7 @@
 from src.utils import write_file
 import numpy as np
 from time import time
+import os
 
 def simrank(adj_matrix, vertex_size, decay_factor, max_iteration, file_name, epsilon):
 
@@ -71,7 +72,7 @@ def simrank(adj_matrix, vertex_size, decay_factor, max_iteration, file_name, eps
         else:
             iteration += 1
 
-        # break while loop depending on max iteration
+        # # break while loop depending on max iteration
         # if iteration >= max_iteration:
         #     break
         # else:
@@ -86,7 +87,8 @@ def simrank(adj_matrix, vertex_size, decay_factor, max_iteration, file_name, eps
 
     # write result as txt
     file_name = file_name.strip(".txt").strip("input/")
-    np.savetxt(f'results/{file_name}/{file_name}_SimRank.txt', sim, fmt='%.3f', newline='\n')
+    os.makedirs(f'results/{file_name}', exist_ok=True)
+    np.savetxt(f'results/{file_name}/{file_name}_SimRank.txt', sim, fmt='%.6f', newline='\n')
 
     # write result as csv
     # np.savetxt(f'{file_name}_SimRank_csv.csv', sim, fmt='%f', delimiter = ",", newline='\n')
@@ -170,6 +172,7 @@ def simrank02(adj_matrix, vertex_size, decay_factor, max_iteration, file_name, e
 
     # 將結果寫入txt
     file_name = file_name.strip(".txt")
+    os.makedirs(f'results/{file_name}', exist_ok=True)
     np.savetxt(f'{file_name}_SimRank02.txt', sim, fmt='%.3f', newline='\n')
 
 

@@ -53,7 +53,7 @@ def pagerank(file_name, adj_matrix, vertex_size, damping_factor, max_iteration, 
         else:
             iteration += 1
 
-        # break while loop depending on convergence max iteration
+        # # break while loop depending on convergence max iteration
         # if iteration >= max_iteration:
         #     break
         # else:
@@ -66,4 +66,4 @@ def pagerank(file_name, adj_matrix, vertex_size, damping_factor, max_iteration, 
 
     # write result as txt
     file_name = file_name.strip(".txt").strip("input/")
-    write_file(f'results/{file_name}/{file_name}_PageRank.txt', page_rank)
+    write_file(f'results/{file_name}', f'results/{file_name}/{file_name}_PageRank.txt', page_rank)

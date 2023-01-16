@@ -1,7 +1,7 @@
 from src.utils import read_file, construct_adj_matrix
 from src.hits import hits01, hits02
 from src.pagerank import pagerank
-from src.simrank import simrank, simrank02
+from src.simrank import simrank
 
 def main():
 

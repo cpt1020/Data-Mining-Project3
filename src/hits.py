@@ -57,8 +57,8 @@ def hits01(adj_matrix, vertex_size, epsilon, max_iteration, file_name):
 
     # write result as txt
     file_name = file_name.strip(".txt").strip("input/")
-    write_file(f'results/{file_name}/{file_name}_HITS_authority.txt', authority)
-    write_file(f'results/{file_name}/{file_name}_HITS_hub.txt', hub)
+    write_file(f'results/{file_name}', f'results/{file_name}/{file_name}_HITS_authority.txt', authority)
+    write_file(f'results/{file_name}', f'results/{file_name}/{file_name}_HITS_hub.txt', hub)
 
 def hits02(adj_matrix, vertex_size, epsilon, max_iteration, file_name):
     
@@ -152,5 +152,5 @@ def hits02(adj_matrix, vertex_size, epsilon, max_iteration, file_name):
 
     # write result as txt
     file_name = file_name.strip(".txt").strip("input")
-    write_file(f'results/{file_name}/{file_name}_HITS02_authority.txt', authority)
-    write_file(f'results/{file_name}/{file_name}_HITS02_hub.txt', hub)
+    write_file(f'results/{file_name}', f'results/{file_name}/{file_name}_HITS02_authority.txt', authority)
+    write_file(f'results/{file_name}', f'results/{file_name}/{file_name}_HITS02_hub.txt', hub)
