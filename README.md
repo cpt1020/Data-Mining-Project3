@@ -2,6 +2,8 @@
 
 This is a homework of Data Mining course Fall 2022 @ NCKU.
 
+report: https://hackmd.io/@cpt/SkDZWfncs
+
 ## Algorithms Implemented
 
 - HITS
